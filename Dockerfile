@@ -11,3 +11,5 @@ RUN apt-get update \
   && apt-get purge --auto-remove -y wget bzip2 \
   && apt-get clean \
   && rm -rf /phantomjs* /var/lib/apt/lists/*
+
+ENTRYPOINT ["/usr/local/bin/phantomjs"]
